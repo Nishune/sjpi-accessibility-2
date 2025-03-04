@@ -95,10 +95,10 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
           </div>
 
           <div class="category-filters">
-            <button class="filter-btn active">All</button>
-            <button class="filter-btn">Ceramic</button>
-            <button class="filter-btn">Glass</button>
-            <button class="filter-btn">Porcelain</button>
+            <button class="filter-btn active" aria-pressed="true">All</button>
+            <button class="filter-btn" aria-pressed="false">Ceramic</button>
+            <button class="filter-btn" aria-pressed="false">Glass</button>
+            <button class="filter-btn" aria-pressed="false">Porcelain</button>
           </div>
 
           <div class="product-grid">
@@ -242,7 +242,13 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
             <form class="newsletter-form">
               <div class="form-group">
-                <input type="email" placeholder="Your email address" required />
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your email address"
+                  required
+                />
                 <button type="submit" class="btn btn-primary">Subscribe</button>
               </div>
             </form>
